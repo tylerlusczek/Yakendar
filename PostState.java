@@ -15,3 +15,5 @@ interface PostState {
      * @param post
      */
     void publish(PostEntity post);
+
+}

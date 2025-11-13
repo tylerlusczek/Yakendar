@@ -57,3 +57,4 @@ class PostEntity {
     public String getLocation() {
         return location;
     }
+}
