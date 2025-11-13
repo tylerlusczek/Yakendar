@@ -1,3 +1,7 @@
+
+/**
+ * PostEntity class defines a single post.
+ */
 class PostEntity {
     private Long id;
     private String username;
@@ -10,7 +14,11 @@ class PostEntity {
         this.state = new DraftState();
     }
 
-    //Edits the current content
+    /**
+     * Edits the current content
+     * 
+     * @param newContent 
+     * */
     public void edit(String newContent) {
         state.edit(this, newContent);
     }
