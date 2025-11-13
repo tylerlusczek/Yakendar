@@ -1,4 +1,4 @@
-
+package Yakendar;
 
 public class DraftState implements PostState
 {
@@ -8,6 +8,7 @@ public class DraftState implements PostState
 
     }
 
+    @Override
     public void edit(PostEntity post, String newContent)
     {
         if(newContent == null)
@@ -18,6 +19,7 @@ public class DraftState implements PostState
         System.out.println("Post Successfully Edited");
     }
 
+    @Override
     public void publish(PostEntity post)
     {
         PostState publish = new PublishedState();
