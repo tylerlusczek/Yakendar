@@ -1,4 +1,3 @@
-
 /**
  * PostEntity class defines a single post.
  */
@@ -27,6 +26,8 @@ class PostEntity {
     public String getContent() {
         return content;
     }
+
+    public void setContent(String content) { this.content = content;}
 
     //Will publish the post
     public void publish() {

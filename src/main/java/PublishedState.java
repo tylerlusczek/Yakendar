@@ -1,5 +1,3 @@
-package Yakendar;
-
 public class PublishedState implements PostState{
 
     private boolean isPublished;

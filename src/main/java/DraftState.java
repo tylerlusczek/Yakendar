@@ -1,5 +1,3 @@
-package Yakendar;
-
 public class DraftState implements PostState
 {
     //Constructor
