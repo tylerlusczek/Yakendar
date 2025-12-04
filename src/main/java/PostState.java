@@ -8,12 +8,12 @@ interface PostState {
      * @param post
      * @param newContent
      */
-    void edit(PostEntity post, String newContent);
+    boolean edit(PostEntity post, String newContent);
 
     /**
      * Publish the post.
      * @param post
      */
-    void publish(PostEntity post);
+    boolean publish(PostEntity post);
 
 }

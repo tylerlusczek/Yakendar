@@ -13,7 +13,7 @@ repositories {
 java {
     toolchain {
         //Make your version of java instead of my 24
-        languageVersion.set(JavaLanguageVersion.of(24))
+        languageVersion.set(JavaLanguageVersion.of(23))
     }
 }
 

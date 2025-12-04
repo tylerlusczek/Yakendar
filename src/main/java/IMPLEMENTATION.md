@@ -1,6 +1,6 @@
 # Implementation
 ## What Was Implemented
-For PM4, we implemented one interface and 3 classes. Our interface is PostState and it defines two operations: edit() and publish(). These methods are then implemented into two class titled DraftState and PublishedState. DraftState is a post still in its draft whereas PublishedState is a post that has been published. Finally, the PostEntity class is where the posts attributes live including the username, id, location, contents, and state of the current post.
+For PM4, we implemented one interface and 3 classes. Our interface is PostState and it defines two operations: edit() and publish(). These methods are then implemented into two class titled DraftStateTest and PublishedState. DraftStateTest is a post still in its draft whereas PublishedState is a post that has been published. Finally, the PostEntity class is where the posts attributes live including the username, id, location, contents, and state of the current post.
 
 UML Diagram of Classes:
 ![Diagram of Classes](./images/class_diagram_pm4.png)

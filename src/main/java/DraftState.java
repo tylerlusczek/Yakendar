@@ -7,22 +7,25 @@ public class DraftState implements PostState
     }
 
     @Override
-    public void edit(PostEntity post, String newContent)
+    public boolean edit(PostEntity post, String newContent)
     {
         if(newContent == null)
         {
             System.out.println("Edit Failed: Not a valid edit");
+            return false;
         }
         post.setContent(newContent);
         System.out.println("Post Successfully Edited");
+        return true;
     }
 
     @Override
-    public void publish(PostEntity post)
+    public boolean publish(PostEntity post)
     {
         PostState publish = new PublishedState();
         post.setState(publish);
         System.out.println("Post Successfully Published");
+        return true;
     }
 
 }

@@ -7,19 +7,22 @@ public class PublishedState implements PostState{
     }
     
     @Override
-    public void edit(PostEntity post, String newContent) {
+    public boolean edit(PostEntity post, String newContent) {
         System.out.println("Cannot edit a published post.");
+        return false;
     }
 
     @Override
-    public void publish(PostEntity post) {
+    public boolean publish(PostEntity post) {
         if(post != null && !isPublished)
         {
             System.out.println("Post is published");
+            return true;
         }
         else
         {
             System.out.println("Post does not exist or is not published");
+            return false;
         }
     }
 
@@ -28,9 +31,10 @@ public class PublishedState implements PostState{
         return isPublished;
     }
 
-    public void changePublishedStatus()
+    public boolean changePublishedStatus()
     {
         isPublished = !isPublished;
+        return true;
     }
     
 }
