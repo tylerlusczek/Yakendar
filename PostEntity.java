@@ -65,4 +65,10 @@ class PostEntity {
     public String getLocation() {
         return location;
     }
+
+    public String distance(yourPosx, yourPosy, locationPosx, locationPosy) {
+        radius = sqrt((Math.pow(locationPosx - yourPosx, 2)) + (Math.pow(locationPosy - yourPosy, 2)));
+
+        return "Distance: " + radius;
+    }
 }
