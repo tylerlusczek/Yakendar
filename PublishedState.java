@@ -1,11 +1,16 @@
-package Yakendar;
-
 public class PublishedState implements PostState{
 
+    private PostEntity user;
     private boolean isPublished;
     public PublishedState()
     {
         this.isPublished = false;
+    }
+
+    public PublishedState(PostEntity user)
+    {
+        this();
+        this.user = user;
     }
     
     @Override
@@ -15,7 +20,7 @@ public class PublishedState implements PostState{
 
     @Override
     public void publish(PostEntity post) {
-        if(post != null && !isPublished)
+        if(post != null && !isPublished && (user.getUsername() != null || !user.getUsername().equals("")))
         {
             System.out.println("Post is published");
         }
