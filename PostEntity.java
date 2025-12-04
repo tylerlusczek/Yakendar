@@ -14,6 +14,16 @@ class PostEntity {
         this.state = new DraftState();
     }
 
+    //Constructor that can take in arguments for posts that already have items identified
+    public postEntity(Long id, String username, String locaiton, String content)
+    {
+        this.id = id;
+        this.username = username;
+        this.location = location;
+        this.content = content;
+        this.state = new DraftState();
+    }
+
     /**
      * Edits the current content
      * 
