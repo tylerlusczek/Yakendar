@@ -20,7 +20,7 @@ public class PublishedState implements PostState{
 
     @Override
     public void publish(PostEntity post) {
-        if(post != null && !isPublished && (user.getUsername() != null || !user.getUsername().equals("")))
+        if(post != null && !isPublished && (user.getUsername() != null || !user.getUsername().equals(""))) //added edge cases to check if the user is valid
         {
             System.out.println("Post is published");
         }
@@ -30,6 +30,7 @@ public class PublishedState implements PostState{
         }
     }
 
+    //check the state on whether the post is published
     public boolean getIsPublished()
     {
         return isPublished;
